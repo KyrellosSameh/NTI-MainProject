@@ -424,7 +424,6 @@ template.innerHTML = `
             <li><a href="/faq">FAQ</a></li>
             <li><a href="/shipping">Shipping &amp; Returns</a></li>
             <li><a href="/size-guide">Size Guide</a></li>
-            <li><a href="/contact">Contact Us</a></li>
             <li><a href="/track-order">Track Order</a></li>
           </ul>
         </div>

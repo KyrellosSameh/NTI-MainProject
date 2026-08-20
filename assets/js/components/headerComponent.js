@@ -364,7 +364,6 @@ header {
         <a href="./featured.html">Featured</a>
         <a href="./About.html">About</a>
         <a href="./branches.html">Branches</a>
-        <a href="./contact.html">Contact</a>
       </nav>
       <div class="header-widgets">
         <!-- Search -->
@@ -473,7 +472,6 @@ header {
         <a href="./featured.html">Featured</a>
         <a href="./About.html">About</a>
         <a href="./branches.html">Branches</a>
-        <a href="./contact.html">Contact</a>
         <div class = "mobile-menu-wedgets">
         <a href="./wishlist.html">Wishlist</a>
    
