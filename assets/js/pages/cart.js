@@ -77,6 +77,7 @@ function saveCart(cart) {
 
 // Active cart state
 let cart = loadCart();
+let discountPercent = 0;
 
 
 // ======================== DOM REFS ===========================
@@ -92,6 +93,12 @@ const freeShippingMsg = document.getElementById('free-shipping-msg');
 const btnClearCart = document.getElementById('btn-clear-cart');
 const btnCheckout = document.getElementById('btn-checkout');
 const emptyCartTemplate = document.getElementById('empty-cart-template');
+
+// Promo Code DOM Elements
+const promoInput = document.getElementById('promo-input');
+const btnApplyPromo = document.getElementById('btn-apply-promo');
+const discountRow = document.getElementById('discount-row');
+const summaryDiscount = document.getElementById('summary-discount');
 
 
 // ======================== RENDERERS ==========================
@@ -225,21 +232,39 @@ function updateSummary() {
   // 1. Subtotal
   const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
-  // 2. Shipping
+  // 2. Discount Calculation (Simple if statement check)
+  let discountAmount = 0;
+  if (discountPercent > 0) {
+    discountAmount = (subtotal * discountPercent) / 100;
+  }
+
+  const discountedSubtotal = subtotal - discountAmount;
+
+  // 3. Shipping
   const isFreeShipping = subtotal >= FREE_SHIPPING_THRESHOLD;
   const shipping = isFreeShipping ? 0 : STANDARD_SHIPPING;
 
-  // 3. Tax
-  const tax = Math.round(subtotal * TAX_RATE * 100) / 100;
+  // 4. Tax
+  const tax = Math.round(discountedSubtotal * TAX_RATE * 100) / 100;
 
-  // 4. Grand Total
-  const total = subtotal + shipping + tax;
+  // 5. Grand Total
+  const total = discountedSubtotal + shipping + tax;
 
   // ---- Update DOM ----
 
   animateValue(summarySubtotal, `$${subtotal}`);
   animateValue(summaryTotal, `$${total.toFixed(total % 1 === 0 ? 0 : 2)}`);
   animateValue(summaryTax, `$${tax.toFixed(tax % 1 === 0 ? 0 : 2)}`);
+
+  // Update Discount UI
+  if (discountRow && summaryDiscount) {
+    if (discountAmount > 0) {
+      discountRow.classList.remove('d-none');
+      summaryDiscount.textContent = `-$${discountAmount.toFixed(2)}`;
+    } else {
+      discountRow.classList.add('d-none');
+    }
+  }
 
   // Shipping display
   if (isFreeShipping) {
@@ -436,6 +461,32 @@ if (btnCheckout) {
       return;
     }
     window.location.href = 'checkout.html';
+  });
+}
+
+
+// ======================== PROMO CODE LOGIC ===================
+
+/**
+ * Handles applying promo code using simple IF statements.
+ */
+if (btnApplyPromo && promoInput) {
+  btnApplyPromo.addEventListener('click', () => {
+    const code = promoInput.value.trim().toUpperCase();
+
+    // Simple IF statement to check promo code
+    if (code === 'STRIDE20') {
+      discountPercent = 20;
+      alert('Promo code STRIDE20 applied! You got 20% off.');
+    } else if (code === '') {
+      discountPercent = 0;
+      alert('Please enter a promo code.');
+    } else {
+      discountPercent = 0;
+      alert('Invalid promo code.');
+    }
+
+    updateSummary();
   });
 }
 
