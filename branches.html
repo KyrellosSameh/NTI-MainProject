@@ -3,48 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-  <!-- ======================== FONTS ======================== -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
-  
-  <!-- ================== CUSTOM CSS ========================= -->
-  <link rel="stylesheet" href="assets/css/index.css" />
-  <link rel="stylesheet" href="featured.css" />
 
-  <!-- =================== BOOTSTRAP (LOCAL) ================= -->
-  <link
-    rel="stylesheet"
-    href="assets/css/bootstrap.min.css"
-  />
+    <title>Branches | Stride</title>
 
-  <!-- ================== TAILWIND (CDN) ===================== -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ======================== FONTS ======================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <script>
-    tailwind.config = {
-      corePlugins: {
-        preflight: false
-      }
-    };
-  </script>
+    <!-- =================== BOOTSTRAP (LOCAL) ================= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
-    <title>Contact Us | Stride</title>
-    <!-- Assuming your project structure uses bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<!-- ملف الـ CSS الخاص بكِ -->
-<link rel="stylesheet" href= "assets/css/pages/branches.css">
-   
+    <!-- ================== CUSTOM CSS ========================= -->
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/pages/branches.css" />
+
 </head>
 <body>
- <!-- ===================== NAVBAR PLACEHOLDER ===================== -->
-<site-header>
+  <!-- ===================== NAVBAR ===================== -->
+  <site-header></site-header>
 
-</site-header>
     <!-- Header Section -->
     <section class="contact-header">
         <h1>Contact us</h1>
@@ -84,20 +65,21 @@
         </div>
     </div>
 
-    <!-- Map placeholder (simplified) -->
-    <section class="py-5 text-center bg-light my-5">
+    <!-- Map Section -->
+    <section class="map-section">
         <div class="container">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55251.37451031098!2d31.25849255!3d30.059488450000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2z2KfZhNmC2KfZh9ix2KnYjCDZhdit2KfZgdi42Kkg2KfZhNmC2KfZh9ix2KnigKw!5e0!3m2!1sar!2seg!4v1787096285965!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>            </div>
+            <div class="map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55251.37451031098!2d31.25849255!3d30.059488450000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2z2KfZhNmC2KfZh9ix2KnYjCDZhdit2KfZgdi42Kkg2KfZhNmC2KfZh9ix2KnigKw!5e0!3m2!1sar!2seg!4v1787096285965!5m2!1sar!2seg" width="100%" height="450" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
     </section>
 
+    <!-- Footer -->
+    <site-footer></site-footer>
 
+    <!-- JS -->
     <script src="assets/js/bootstrap.min.js"></script>
-    <site-footer>
-
-</site-footer>
-<!-- BOOTSTRAP JS -->
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/main.js" type="module"></script>
+    <script src="assets/js/main.js" type="module"></script>
 
 </body>
 </html>

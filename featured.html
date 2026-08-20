@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -19,34 +19,18 @@
   />
 
   <!-- =================== BOOTSTRAP (LOCAL) ================= -->
-  <link
-    rel="stylesheet"
-    href="assets/css/bootstrap.min.css"
-  />
-
-  <!-- ================== TAILWIND (CDN) ===================== -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <script>
-    tailwind.config = {
-      corePlugins: {
-        preflight: false
-      }
-    };
-  </script>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
   <!-- ================== CUSTOM CSS ========================= -->
   <link rel="stylesheet" href="assets/css/index.css" />
-  <link rel="stylesheet" href="featured.css" />
+  <link rel="stylesheet" href="assets/css/pages/featured.css" />
 
 </head>
 
 
-<body class="font-['Inter']">
-   <!-- ===================== NAVBAR PLACEHOLDER ===================== -->
-<site-header>
-
-</site-header>
+<body>
+  <!-- ===================== NAVBAR ===================== -->
+  <site-header></site-header>
 
   <!-- ===================== MAIN CONTENT =========================== -->
   <main>
@@ -56,131 +40,126 @@
 
       <!-- Featured Header -->
       <div class="featured-header mb-5">
-
-    <div>
-        <h1>Featured Collection</h1>
-        <p>Our most popular styles handpicked for you</p>
-    </div>
-
-    <a href="shop.html" class="btn btn-outline-dark">
-        View All Featured
-    </a>
-
-</div>
+        <div>
+          <h1>Featured Collection</h1>
+          <p>Our most popular styles handpicked for you</p>
+        </div>
+        <a href="shop.html" class="btn btn-view-all">
+          View All Featured
+        </a>
+      </div>
 
       <!-- Products Grid -->
       <div class="row g-4">
 
-       
         <!-- Product 1 -->
-<div class="col-12 col-sm-6 col-lg-3">
-    <div class="card product-card h-100 border-0 shadow-sm">
-        <img src="assets/images/Classic Leather black.avif" class="card-img-top" alt="Classic Leather Black">
-        <div class="card-body d-flex flex-column">
-            <h5 class="card-title fs-6 fw-bold">Classic Leather Black</h5>
-            <p class="card-text text-muted mb-3">$89.00</p>
-            <a href="product.html" class="btn btn-outline-dark mt-auto btn-sm">View Product</a>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card featured-card h-100 border-0">
+            <img src="assets/images/Classic Leather black.avif" class="card-img-top" alt="Classic Leather Black">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6 fw-bold">Classic Leather Black</h5>
+              <p class="card-text mb-3">$89.00</p>
+              <a href="product.html" class="btn btn-product mt-auto btn-sm">View Product</a>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
 
-<!-- Product 2 -->
-<div class="col-12 col-sm-6 col-lg-3">
-    <div class="card product-card h-100 border-0 shadow-sm">
-        <img src="assets\images\Aero Street White.avif" class="card-img-top" alt="Classic Leather White">
-        <div class="card-body d-flex flex-column">
-            <h5 class="card-title fs-6 fw-bold">Classic Leather White</h5>
-            <p class="card-text text-muted mb-3">$99.00</p>
-            <a href="product.html" class="btn btn-outline-dark mt-auto btn-sm">View Product</a>
+        <!-- Product 2 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card featured-card h-100 border-0">
+            <img src="assets/images/Aero Street White.avif" class="card-img-top" alt="Aero Street White">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6 fw-bold">Aero Street White</h5>
+              <p class="card-text mb-3">$99.00</p>
+              <a href="product.html" class="btn btn-product mt-auto btn-sm">View Product</a>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
 
-<!-- Product 3 -->
-<div class="col-12 col-sm-6 col-lg-3">
-    <div class="card product-card h-100 border-0 shadow-sm">
-        <img src="assets/images/Cloud Flex Black.avif" class="card-img-top" alt="Cloud Flex Black">
-        <div class="card-body d-flex flex-column">
-            <h5 class="card-title fs-6 fw-bold">Cloud Flex Black</h5>
-            <p class="card-text text-muted mb-3">$110.00</p>
-            <a href="product.html" class="btn btn-outline-dark mt-auto btn-sm">View Product</a>
+        <!-- Product 3 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card featured-card h-100 border-0">
+            <img src="assets/images/Cloud Flex Black.avif" class="card-img-top" alt="Cloud Flex Black">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6 fw-bold">Cloud Flex Black</h5>
+              <p class="card-text mb-3">$110.00</p>
+              <a href="product.html" class="btn btn-product mt-auto btn-sm">View Product</a>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
 
-<!-- Product 4 -->
-<div class="col-12 col-sm-6 col-lg-3">
-    <div class="card product-card h-100 border-0 shadow-sm">
-        <img src="assets/images/Court Dominator X.avif" class="card-img-top" alt="Court Dominator X">
-        <div class="card-body d-flex flex-column">
-            <h5 class="card-title fs-6 fw-bold">Court Dominator X</h5>
-            <p class="card-text text-muted mb-3">$125.00</p>
-            <a href="product.html" class="btn btn-outline-dark mt-auto btn-sm">View Product</a>
+        <!-- Product 4 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card featured-card h-100 border-0">
+            <img src="assets/images/Court Dominator X.avif" class="card-img-top" alt="Court Dominator X">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6 fw-bold">Court Dominator X</h5>
+              <p class="card-text mb-3">$125.00</p>
+              <a href="product.html" class="btn btn-product mt-auto btn-sm">View Product</a>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
 
-<!-- Product 5 -->
-<div class="col-12 col-sm-6 col-lg-3">
-    <div class="card product-card h-100 border-0 shadow-sm">
-        <img src="assets/images/Cloud Flex pink.avif" class="card-img-top" alt="Classic Leather Black Variant">
-        <div class="card-body d-flex flex-column">
-            <h5 class="card-title fs-6 fw-bold">Urban Street Runner</h5>
-            <p class="card-text text-muted mb-3">$95.00</p>
-            <a href="product.html" class="btn btn-outline-dark mt-auto btn-sm">View Product</a>
+        <!-- Product 5 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card featured-card h-100 border-0">
+            <img src="assets/images/Cloud Flex pink.avif" class="card-img-top" alt="Urban Street Runner">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6 fw-bold">Urban Street Runner</h5>
+              <p class="card-text mb-3">$95.00</p>
+              <a href="product.html" class="btn btn-product mt-auto btn-sm">View Product</a>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
 
-<!-- Product 6 -->
-<div class="col-12 col-sm-6 col-lg-3">
-    <div class="card product-card h-100 border-0 shadow-sm">
-        <img src="assets/images/Classic Leather grey.avif" class="card-img-top" alt="Classic Leather White Variant">
-        <div class="card-body d-flex flex-column">
-            <h5 class="card-title fs-6 fw-bold">Minimalist Sneaker</h5>
-            <p class="card-text text-muted mb-3">$85.00</p>
-            <a href="product.html" class="btn btn-outline-dark mt-auto btn-sm">View Product</a>
+        <!-- Product 6 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card featured-card h-100 border-0">
+            <img src="assets/images/Classic Leather grey.avif" class="card-img-top" alt="Minimalist Sneaker">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6 fw-bold">Minimalist Sneaker</h5>
+              <p class="card-text mb-3">$85.00</p>
+              <a href="product.html" class="btn btn-product mt-auto btn-sm">View Product</a>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
 
-<!-- Product 7 -->
-<div class="col-12 col-sm-6 col-lg-3">
-    <div class="card product-card h-100 border-0 shadow-sm">
-        <img src="assets/images/Cloud Flex Black.avif" class="card-img-top" alt="Cloud Flex Black Variant">
-        <div class="card-body d-flex flex-column">
-            <h5 class="card-title fs-6 fw-bold">Cloud Flex Pro</h5>
-            <p class="card-text text-muted mb-3">$120.00</p>
-            <a href="product.html" class="btn btn-outline-dark mt-auto btn-sm">View Product</a>
+        <!-- Product 7 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card featured-card h-100 border-0">
+            <img src="assets/images/Cloud Flex Black.avif" class="card-img-top" alt="Cloud Flex Pro">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6 fw-bold">Cloud Flex Pro</h5>
+              <p class="card-text mb-3">$120.00</p>
+              <a href="product.html" class="btn btn-product mt-auto btn-sm">View Product</a>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
 
-<!-- Product 8 -->
-<div class="col-12 col-sm-6 col-lg-3">
-    <div class="card product-card h-100 border-0 shadow-sm">
-        <img src="assets/images/Court Dominator X.avif" class="card-img-top" alt="Court Dominator X Variant">
-        <div class="card-body d-flex flex-column">
-            <h5 class="card-title fs-6 fw-bold">Court Dominator Elite</h5>
-            <p class="card-text text-muted mb-3">$135.00</p>
-            <a href="product.html" class="btn btn-outline-dark mt-auto btn-sm">View Product</a>
+        <!-- Product 8 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card featured-card h-100 border-0">
+            <img src="assets/images/Court Dominator X.avif" class="card-img-top" alt="Court Dominator Elite">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6 fw-bold">Court Dominator Elite</h5>
+              <p class="card-text mb-3">$135.00</p>
+              <a href="product.html" class="btn btn-product mt-auto btn-sm">View Product</a>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
 
-
-</div>
-
+      </div>
 
     </div>
   </section>
 
 </main>
-<site-footer>
 
-</site-footer>
-<!-- BOOTSTRAP JS -->
-  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Footer -->
+  <site-footer></site-footer>
+
+  <!-- JS -->
+  <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/main.js" type="module"></script>
 </body>
 </html>
