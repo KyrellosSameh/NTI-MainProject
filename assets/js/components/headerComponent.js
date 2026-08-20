@@ -359,10 +359,10 @@ header {
       </a>
       <nav>
         <a href="./shop.html">Shop</a>
-        <a href="./categories.html">Categories</a>
-        <a href="./newArrivals.html">New Arrivals</a>
+        <a href="./Categories.html">Categories</a>
+        <a href="./New-Arrivals.html">New Arrivals</a>
         <a href="./featured.html">Featured</a>
-        <a href="./about.html">About</a>
+        <a href="./About.html">About</a>
         <a href="./branches.html">Branches</a>
         <a href="./contact.html">Contact</a>
       </nav>
@@ -468,10 +468,10 @@ header {
       <div class = "mobile-menu">
        <nav class = "mobile-menu-nav">
         <a href="./shop.html">Shop</a>
-        <a href="./categories.html">Categories</a>
-        <a href="./newArrivals.html">New Arrivals</a>
+        <a href="./Categories.html">Categories</a>
+        <a href="./New-Arrivals.html">New Arrivals</a>
         <a href="./featured.html">Featured</a>
-        <a href="./about.html">About</a>
+        <a href="./About.html">About</a>
         <a href="./branches.html">Branches</a>
         <a href="./contact.html">Contact</a>
         <div class = "mobile-menu-wedgets">
