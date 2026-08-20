@@ -408,12 +408,12 @@ template.innerHTML = `
         <div class="col-lg-3 col-md-4 col-sm-6 shop custom-section-footer">
           <h4>Shop</h4>
           <ul>
-            <li><a href="./categories.html?category=running">Running</a></li>
-            <li><a href="./categories.html?category=sneakers">Sneakers</a></li>
-            <li><a href="./categories.html?category=basketball">Basketball</a></li>
-            <li><a href="./categories.html?category=casual">Casual</a></li>
-            <li><a href="./categories.html?category=boots">Boots</a></li>
-            <li><a href="./categories.html?category=sandals">Sandals</a></li>
+            <li><a href="./shop.html?category=running">Running</a></li>
+            <li><a href="./shop.html?category=sneakers">Sneakers</a></li>
+            <li><a href="./shop.html?category=basketball">Basketball</a></li>
+            <li><a href="./shop.html?category=casual">Casual</a></li>
+            <li><a href="./shop.html?category=boots">Boots</a></li>
+            <li><a href="./shop.html?category=sandals">Sandals</a></li>
           </ul>
         </div>
 
@@ -424,6 +424,7 @@ template.innerHTML = `
             <li><a href="/faq">FAQ</a></li>
             <li><a href="/shipping">Shipping &amp; Returns</a></li>
             <li><a href="/size-guide">Size Guide</a></li>
+            <li><a href="/contact">Contact Us</a></li>
             <li><a href="/track-order">Track Order</a></li>
           </ul>
         </div>
