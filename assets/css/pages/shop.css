@@ -328,10 +328,10 @@ body {
 }
 
 .product-name {
-    color: white;
+    color: var(--text-logo);
 
-    font-size: 20px;
-    font-weight: 800;
+    font-size: 1rem;
+    font-weight: 600;
 
     text-decoration: none;
 
@@ -356,14 +356,14 @@ body {
 }
 
 .price {
-    color: white;
+    color: var(--text-logo);
 
-    font-size: 20px;
-    font-weight: 800;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 .old-price {
-    color: #667286;
+    color: var(--color-gray-500);
 
     text-decoration: line-through;
 
