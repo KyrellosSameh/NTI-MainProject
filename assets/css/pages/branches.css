@@ -1,0 +1,36 @@
+:root {
+    /* ضعي هنا اللون الرئيسي للمتجر (مثلاً لون الأزرار في صفحة Shop) */
+    --main-brand-color: #ff5722; /* مثال: إذا كان عندك لون أورانج برتقالي */
+    
+    /* ضعي هنا لون الخلفية الذي تستخدمينه في باقي صفحاتك (مثلاً لون فاتح جداً أو رمادي) */
+    --page-background: #ffffff; 
+}
+
+/* الهيدر: اجعليه بلون هادئ يتناسب مع المتجر وليس غامقاً جداً */
+.contact-header {
+    background-color: #f8f9fa; /* لون رمادي فاتح جداً */
+    color: #333;             /* لون الخط غامق ليكون واضحاً */
+    padding: 80px 0;
+    text-align: center;
+}
+
+/* الكارد: حافظي عليه أبيض ليعطي مساحة مريحة للعين */
+.contact-container {
+    background: #ffffff;
+    border: 1px solid #eee; /* إطار خفيف بدلاً من الظلال الكبيرة */
+    padding: 50px;
+    border-radius: 0;      /* إذا كانت أزرارك في الموقع حادة الزوايا */
+    margin-top: -50px;
+}
+
+/* الزر: استخدمي اللون الذي يظهر في "Shop" */
+.btn-primary-stride {
+    background-color: var(--main-brand-color);
+    color: white;
+    border: none;
+    padding: 12px 40px;
+}
+
+.btn-primary-stride:hover {
+    filter: brightness(90%); /* يغمق اللون قليلاً عند المرور عليه */
+}
